@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3c6; /* Soft yellow background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff; /* White background for the container */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* Adjust width to 90% of the viewport to prevent overflow */
+    max-width: 500px; /* Set a max width for larger screens */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%; /* Ensure textarea takes up 100% of the container's width */
+    height: 150px; /* Keep the height fixed */
+    padding: 10px;
+    border: 2px solid #007bff; /* Set border color */
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; /* Disable resizing */
+    box-sizing: border-box; /* Include padding and border in the textarea's width */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Focus border color */
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: #007bff; /* Text color for the count */
+}
