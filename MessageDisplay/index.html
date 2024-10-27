@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Display</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+        }
+        #container {
+            padding: 20px;
+            width: 350px;
+            background-color: lightgoldenrodyellow;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        #container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #messageDisplay {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00796b;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <img src="https://media.tenor.com/yqhbO-eKna0AAAAj/cute.gif" alt="GIF">
+    <h1>Write a Message!</h1>
+    <input type="text" id="userMessage" placeholder="Type your message here" />
+    <button onclick="displayUserMessage()">Submit</button>
+</div>
+
+<div id="messageDisplay"></div>
+
+<script>
+    function displayUserMessage() {
+        var message = document.getElementById("userMessage").value;
+        document.getElementById("messageDisplay").innerText = message;
+        document.getElementById("userMessage").value = "";
+    }
+</script>
+
+</body>
+</html>
