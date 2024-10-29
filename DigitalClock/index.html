@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock" id="clock"></div>
+    </div>
+    <script>
+        // Get the clock element by its ID
+        let clock = document.getElementById('clock');
+
+        // Update the clock every second
+        setInterval(() => {
+            // Create a new Date object to get the current time
+            let date = new Date();
+            // Set the clock's inner HTML to the current time in a localized format
+            clock.innerHTML = date.toLocaleTimeString();
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
