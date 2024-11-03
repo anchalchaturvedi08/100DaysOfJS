@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            display: flex;
+            font-family: monospace;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            /* background-color: lightsalmon; */
+            background-image: url('https://images3.alphacoders.com/135/thumb-1920-1354011.png');
+            margin: 0;
+        }
+        .quote-container {
+            text-align: center;
+            background-color: lightcyan;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .quote-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .quote-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .quote-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        <h1>Random Quote Generator</h1>
+        <p id="quote">Click the button to generate a quote!</p>
+        <button class="quote-button" id="quoteButton">Generate Quote</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
