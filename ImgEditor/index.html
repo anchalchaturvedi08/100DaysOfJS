@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple Image Editor</h1>
+    <input type="file" id="upload" accept="image/*">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div class="controls">
+        <button id="grayscale">Grayscale</button>
+        <button id="invert">Invert Colors</button>
+        <button id="sepia">Sepia</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="editor.js"></script>
+</body>
+</html>
